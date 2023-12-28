@@ -27,4 +27,3 @@ function isBadWords() {
     });
 }
 exports.isBadWords = isBadWords;
-console.log(isBadWords('sad', 'bad', 'mad'));
