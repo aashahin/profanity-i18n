@@ -15,4 +15,13 @@ function badWords(input: string): string {
     return censoredWords.join(' ');
 }
 
+function isBadWords(input: string): boolean {
+    const words: string[] = clear(input.split(' '));
+    const badWords: string[] = dictionary;
+
+    return words.some(word=>
+        badWords.indexOf(word.toLowerCase()) !== -1
+    )
+}
+
 export default badWords;
