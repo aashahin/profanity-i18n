@@ -30,12 +30,12 @@ profanity.list(['هذه', 'جملة', 'فيها', 'كلمات', 'سيئة']); //
 profanity.list(['This', 'is', 'a', 'string', 'with', 'bad', 'words']); // ['bad', 'words']
 
 // Add a word to the list
-profanity.add(['هذه', 'جملة', 'فيها', 'كلمات', 'سيئة'], 'كلمة'); // ['هذه', 'جملة', 'فيها', 'كلمات', 'سيئة', 'كلمة']
-profanity.add(['This', 'is', 'a', 'string', 'with', 'bad', 'words'], 'word'); // ['This', 'is', 'a', 'string', 'with', 'bad', 'words', 'word']
+profanity.add(['هذه', 'جملة', 'فيها', 'كلمات', 'سيئة']); 
+profanity.add(['This', 'is', 'a', 'string', 'with', 'bad', 'words']); 
 
 // Remove a word from the list
-profanity.remove(['هذه', 'جملة', 'فيها', 'كلمات', 'سيئة'], 'كلمة'); // ['هذه', 'جملة', 'فيها', 'كلمات', 'سيئة']
-profanity.remove(['This', 'is', 'a', 'string', 'with', 'bad', 'words'], 'word'); // ['This', 'is', 'a', 'string', 'with', 'bad', 'words']
+profanity.remove(['هذه', 'جملة', 'فيها', 'كلمات', 'سيئة']);
+profanity.remove(['This', 'is', 'a', 'string', 'with', 'bad', 'words']); 
 ```
 
 ## Supported Languages
