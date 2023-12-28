@@ -1,7 +1,7 @@
 {
   "name": "profanity-i18n",
   "version": "1.0.12",
-  "main": "index.ts",
+  "main": "src/profanity.ts",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

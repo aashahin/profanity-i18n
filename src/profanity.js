@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.isBadWords = exports.badWords = void 0;
-var dictionary_1 = require("./dictionary");
+var dictionary_1 = require("./dictionary/dictionary");
 function clear(words) {
     return words.map(function (word) { return word.replace(/[^a-zA-Z\u0621-\u064A]/g, ''); });
 }
