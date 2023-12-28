@@ -4,7 +4,7 @@ function clear(words: string[]): string[] {
     return words.map(word => word.replace(/[^a-zA-Z\u0621-\u064A]/g, ''));
 }
 
-function badWords(input: string): string {
+export function badWords(input: string): string {
     const words: string[] = clear(input.split(' '));
     const badWords: string[] = dictionary;
     const censoredWords = words.map(word => {
@@ -23,5 +23,3 @@ export function isBadWords(...input: string[]): boolean {
         badWords.indexOf(word.toLowerCase()) !== -1
     )
 }
-
-export default badWords;
