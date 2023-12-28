@@ -15,7 +15,7 @@ function badWords(input: string): string {
     return censoredWords.join(' ');
 }
 
-function isBadWords(input: string): boolean {
+export function isBadWords(input: string): boolean {
     const words: string[] = clear(input.split(' '));
     const badWords: string[] = dictionary;
 
