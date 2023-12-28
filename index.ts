@@ -1,4 +1,4 @@
-import {dictionary} from "./dictionary";
+import {dictionary} from "./dictionary/dictionary";
 
 function clear(words: string[]): string[] {
     return words.map(word => word.replace(/[^a-zA-Z\u0621-\u064A]/g, ''));
