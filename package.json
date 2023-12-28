@@ -1,6 +1,6 @@
 {
   "name": "profanity-i18n",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "main": "src/index.js",
   "type": "commonjs",
   "scripts": {
