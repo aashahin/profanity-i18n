@@ -1,4 +1,4 @@
-const dictionary: string[] = [
+const dictionary = [
     "ahole",
     "anus",
     "ash0le",
@@ -1046,5 +1046,3 @@ const dictionary: string[] = [
     "وسخه",
     "فشخ",
 ];
-
-export default dictionary;
