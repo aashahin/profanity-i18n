@@ -1,1 +1,1 @@
-export {badWords, isBadWords} from './profanity';
+export {filter, contains, add, list, remove} from './profanity';
