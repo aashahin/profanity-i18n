@@ -4,6 +4,15 @@ function clear(words: string[]): string[] {
     return words.map(word => word.replace(/[^a-zA-Z\u0621-\u064A]/g, ''));
 }
 
+/**
+ * @param input
+ * @description
+ * Filter bad words from a string
+ * @returns {string}
+ * @example
+ * profanity.filter('This is a bad word');
+ * //=> 'This is a *** word'
+ */
 export function filter(input: string): string {
     const words: string[] = clear(input.split(' '));
     const badWords: string[] = dictionary;
@@ -15,6 +24,14 @@ export function filter(input: string): string {
     return censoredWords.join(' ');
 }
 
+/**
+ * @description
+ * Check if a string contains bad words
+ * @returns {boolean}
+ * @example
+ * profanity.contains('This is a bad word');
+ * //=> true
+ */
 export function contains(...input: string[]): boolean {
     const words: string[] = clear(input.join(' ').split(' '));
     const badWords: string[] = dictionary;
@@ -24,6 +41,15 @@ export function contains(...input: string[]): boolean {
     )
 }
 
+
+/**
+ * @description
+ * List bad words in a string
+ * @returns {string[]}
+ * @example
+ * profanity.list('This is a bad word');
+ * //=> ['bad']
+ */
 export function list(input: string[]): string[] {
     const words: string[] = clear(input);
     const badWords: string[] = dictionary;
@@ -33,6 +59,13 @@ export function list(input: string[]): string[] {
     )
 }
 
+
+/**
+ * @description
+ * Add bad words to the dictionary
+ * @example
+ * profanity.add(['bad', 'words']);
+ */
 export function add(input: string[]): void {
     const words: string[] = clear(input);
     const badWords: string[] = dictionary;
@@ -44,6 +77,12 @@ export function add(input: string[]): void {
     });
 }
 
+/**
+ * @description
+ * Remove bad words from the dictionary
+ * @example
+ * profanity.remove(['bad', 'words']);
+ */
 export function remove(input: string[]): void {
     const words: string[] = clear(input);
     const badWords: string[] = dictionary;
