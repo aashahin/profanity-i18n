@@ -1,4 +1,4 @@
-import dictionary from "./dictionary.js";
+import {dictionary} from "./dictionary";
 
 function clear(words: string[]): string[] {
     return words.map(word => word.replace(/[^a-zA-Z\u0621-\u064A]/g, ''));
@@ -19,7 +19,7 @@ export function isBadWords(...input: string[]): boolean {
     const words: string[] = clear(input.join(' ').split(' '));
     const badWords: string[] = dictionary;
 
-    return words.some(word=>
+    return words.some(word =>
         badWords.indexOf(word.toLowerCase()) !== -1
     )
 }

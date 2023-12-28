@@ -1,4 +1,4 @@
-const dictionary = [
+export const dictionary = [
     "ahole",
     "anus",
     "ash0le",
